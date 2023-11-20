@@ -1,0 +1,301 @@
+.imglogos{
+    display: flex;
+    text-align: right;
+    align-items: right;
+    margin-left: 1300px;
+    margin-top: -80px;
+  }
+  
+  .imglogos img {
+    width: 30px;
+    padding: 10px;
+  }
+
+  #logo {
+    width:100px;
+    height: auto;
+    align-items: center;
+    margin-top: 25px;
+    margin-left: 700px;
+  }
+  
+  #navicon {
+    width:60px;
+    height: auto;
+    margin-top: 0px;
+  
+    flex-direction:row;
+  
+  }
+  
+  body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    background-color: white;
+  }
+  
+  .sidebar{
+    position: fixed;
+    width: 240px;
+    left: -240px;
+    height: 100%;
+    background-color: #fff;
+    transition: all .5s ease;
+  }
+  .sidebar header{
+    font-size: 28px;
+    color: #353535;
+    line-height: 70px;
+    text-align: center;
+    background-color: #fff;
+  
+  }
+  .sidebar a{
+    display: block;
+    height: 65px;
+    width: 100%;
+    color: #353535;
+    line-height: 65px;
+    padding-left: 30px;
+    box-sizing: border-box;
+    border-left: 5px solid transparent;
+    transition: all .5s ease;
+  }
+  a.active,a:hover{
+    color: #fff;
+     background: white
+  }
+  .sidebar a i{
+    font-size: 23px;
+    margin-right: 16px;
+  }
+  .sidebar a span{
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+  #check{
+    display: none;
+  }
+  
+  label #btn,label #cancel{
+    position: absolute;
+    left: 60px;
+    cursor: pointer;
+    color: black;
+    border-radius: 40%;
+    margin: 15px 30px;
+    font-size: 29px;
+    height: 45px;
+    width: 45px;
+    text-align: center;
+    line-height: 45px;
+    transition: all .5s ease;
+    margin-top: -50px;
+  }
+  label #cancel{
+    opacity: 0;
+    visibility: hidden;
+  }
+  #check:checked ~ .sidebar{
+    left: 0;
+  }
+  #check:checked ~ label #btn{
+    margin-left: 245px;
+    opacity: 0;
+    visibility: hidden;
+  }
+  #check:checked ~ label #cancel{
+    margin-left: 245px;
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  
+  span {
+    color: black;
+  }
+  
+  span:hover {
+    color: #732600;
+  }
+  
+  @keyframes efeito {
+    from {
+      font-size:10px;
+    }
+  
+    to {
+      font-size:20px;
+      color:yellow;
+    }
+    }
+  
+  #grande {
+   width: 250px;
+   margin-left: 60px;
+   margin-top: 100px;
+  }
+  
+  .imgs {
+    margin-top: 100px;
+    margin-left: 57%;
+  }
+  
+  #menor1 {
+  width: 100px;
+  padding: 10px;
+  margin-left: -600px;
+  }
+  #menor2 {
+  width: 100px;
+  padding: 10px;
+  }
+  #menor3 {
+  width: 100px;
+  padding: 10px;
+  }
+  
+  .produtoinfo {
+        font-family: Arial, Helvetica, sans-serif;
+        justify-content: left;
+        margin-left: 600px;
+        margin-top: -100px;
+  }
+  
+  h1 {
+   font-size: 25px;
+   margin-top: -550px;
+  }
+  
+  #preço {
+    font-size: 30px;
+    color: #AE7052;
+    margin-top: 80px;
+    font-weight: normal;
+  }
+  
+  #parcela {
+    font-size: 20px;
+    margin-top: -10px;
+    font-weight: normal;
+  }
+  
+  #taxa {
+    font-size: 15px;
+    color:#AAA295;
+    margin-top: -10px;
+    font-weight: normal;
+  }
+  
+  #seltam {
+    font-size: 20px;
+    margin-top: 80px;
+    font-weight:600;
+  }
+  
+  #tam p {
+    color: #1d1d1c;
+    font-size: 15px;
+    flex-direction: column;
+    
+  }
+  
+  #tam p:hover{
+    color: #AE7052;
+  }
+  
+  #tam {
+  flex-direction: row;
+  display: flex;
+  margin-left: 20px;
+  
+  }
+  
+  button {
+    color: white;
+    background-color: #AE7052;
+    display: block;
+    margin: 50px 7.5px;
+    padding: 15px 50px;
+    border: none;
+    transition: background .4s ease;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 17px;
+    position: center;
+  }
+  
+  button:hover {
+     font-size: 18px;
+  }
+  
+
+  
+  #rodape{
+    margin-top: 70px;
+    background-color: #AE7052;
+    width: 100%;
+    height: 64px;
+    color: white;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    
+  }
+  
+   p{
+    padding-top: 28px;
+    font-size: 16px;
+    color: white;
+  }
+  
+  @media(max-width:500px){
+  .imglogos{
+    display: flex;
+    text-align: right;
+    align-items: right;
+    margin-left: 300px;
+    margin-top: -70px;
+  }
+  
+  .imglogos img {
+    width: 20px;
+    margin-top: 0px;
+    padding: 10px;
+  }
+  
+    #logo {
+      width:70px;
+      height: auto;
+      align-items: center;
+      justify-content: center;
+      margin-top: 25px;
+      margin-left: 150px;
+    }
+  
+    #grande {
+      width: 250px;
+      margin-left: 100px;
+      margin-top: 100px;
+     }
+     
+     .imgs {
+       margin-top: 70px;
+       margin-left: 130%;
+     }
+     
+     .produtoinfo {
+           margin-left: 90px;
+           margin-top: 600px;
+     }
+  
+     label #btn,label #cancel{
+      position: absolute;
+      left: 20px;
+      margin-top: -40px;
+    }
+     
+    
+  }
