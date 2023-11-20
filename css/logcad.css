@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(../img/background.jpeg);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+}
+
+.logo img{
+    width: auto;
+    height: 140px;
+    margin-bottom: 30%;
+}
+
+h1 {
+    color: #732600;
+    font-size: 30px;
+    text-transform: uppercase;
+    padding-bottom: 15px;
+}
+
+h1:hover{
+    color: #9f3702;
+}
+
+.tela-login {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;  
+}
+
+.login{
+    height: 300px;
+    width: 440px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 310px;
+}
+
+.login form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-bottom: 50px;
+
+}
+
+.login input{
+    margin-top: 15px;
+    background-color: #ffffff;
+    border: none;
+    height: 60px;
+    width: 400px;
+    color: #732600;
+    outline: none;
+    padding-left: 13px;
+    border-radius: 5px;
+    position: center;
+}
+
+.login::placeholder{
+    color: #732600;
+    padding-left: 15px;
+    font-size: 15px;
+}
+
+form [type="button"] {
+    width: 410px;
+    background: #732600;
+    cursor: pointer;
+    color: white;
+    font-size: 19px;
+    text-transform: uppercase;
+    text-align: center;
+    float: left;    
+}
+
+form [type="button"]:hover{
+    background: #9f3702;
+}
+
+
+p {
+    color: white;
+    font-size: 20px;
+}
+
+a{
+    color: #732600;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #9f3702;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media screen and (min-width: 0px) and (max-width: 501px) {
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .logo img {
+        margin-top: -120px;
+    }
+
+    .login {
+        height: 240px;
+        width: 350px;
+        padding: 30px;
+        padding-bottom: 60px;
+    }
+
+    .login input{
+        margin-top: 15px;
+        height: 43px;
+        width: 340px;
+        padding-left: 13px;
+    }
+}
