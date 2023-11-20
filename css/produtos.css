@@ -329,10 +329,21 @@
     
     .produtos{
        flex-direction: column ;
+
+    }
+
+    .produtos-2{
+      flex-direction: column;
     }
     
     .card{
         padding: 90px;
+        margin-left: 12%;
+    }
+
+    .card-2{
+      padding: 100px;
+      margin-left: 12%;
     }
     
     .produto-img{
