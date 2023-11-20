@@ -1,0 +1,260 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+  }
+
+.imglogos{
+  display: flex;
+  text-align: right;
+  align-items: right;
+  margin-left: 1300px;
+  margin-top: -80px;
+}
+
+.imglogos img {
+  width: 30px;
+  padding: 10px;
+}
+
+  #logo {
+    width:100px;
+    height: auto;
+    align-items: center;
+    margin-top: 25px;
+    margin-left: 700px;
+  }
+
+  #navicon {
+    width:100px;
+    height: auto;
+    margin-top: 0px;
+    margin-left: 500px;
+  }
+  
+  body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    background-color: white;
+  }
+
+  .sidebar{
+    position: fixed;
+    width: 240px;
+    left: -240px;
+    height: 100%;
+    background-color: #fff;
+    transition: all .5s ease;
+  }
+  .sidebar header{
+    font-size: 28px;
+    color: #353535;
+    line-height: 70px;
+    text-align: center;
+    background-color: #fff;
+  
+  }
+  .sidebar a{
+    display: block;
+    height: 65px;
+    width: 100%;
+    color: #353535;
+    line-height: 65px;
+    padding-left: 30px;
+    box-sizing: border-box;
+    border-left: 5px solid transparent;
+    transition: all .5s ease;
+  }
+  a.active,a:hover{
+    color: #fff;
+     background: white
+  }
+  .sidebar a i{
+    font-size: 23px;
+    margin-right: 16px;
+  }
+  .sidebar a span{
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+  #check{
+    display: none;
+  }
+
+  label #btn,label #cancel{
+    position: absolute;
+    left: 60px;
+    cursor: pointer;
+    color: black;
+    border-radius: 40%;
+    margin: 15px 30px;
+    font-size: 29px;
+    height: 45px;
+    width: 45px;
+    text-align: center;
+    line-height: 45px;
+    transition: all .5s ease;
+    margin-top: -70px;
+  }
+  label #cancel{
+    opacity: 0;
+    visibility: hidden;
+  }
+  #check:checked ~ .sidebar{
+    left: 0;
+  }
+  #check:checked ~ label #btn{
+    margin-left: 245px;
+    opacity: 0;
+    visibility: hidden;
+  }
+  #check:checked ~ label #cancel{
+    margin-left: 245px;
+    opacity: 1;
+    visibility: visible;
+  }
+  
+
+  span {
+    color: black;
+  }
+
+  span:hover {
+    color: #732600;
+  }
+  
+  @keyframes efeito {
+    from {
+      font-size:10px;
+    }
+  
+    to {
+      font-size:20px;
+      color:yellow;
+    }
+    }
+
+
+#contato{
+    margin-left: -60px;
+    margin-top: 70px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 640px;
+}
+#contatenos {
+    color: #AE7052;
+    margin-bottom: 30px;
+}
+
+#telbat {
+    color: #AE7052;
+    font-size: 15px;
+    font-weight: normal;
+    margin-top: 20px;
+    margin-left: 40px;
+    margin-top: -20px;
+}
+
+img {
+    width: 20px;
+}
+
+#bat {
+    width: 30px;
+}
+
+#text {
+    font-weight: normal;
+    font-size: 15px; 
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+#assis {
+    color:#AE7052;
+    font-weight: normal;
+    font-size: 22px;
+    margin-top: 40px;
+}
+
+textarea {
+    background-color: #D9D9D9;
+    width: 600px;
+    height: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    padding: 15px;
+    color: black;
+    margin-top: 10px;
+}
+
+footer{
+    margin-top: 70px;
+    background-color: #AE7052;
+    width: 100%;
+    height: 64px;
+    color: white;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+footer p{
+    padding-top: 28px;
+    font-size: 16px;
+    color: white;
+}
+
+@media(max-width : 500px){
+
+  .imglogos{
+    display: flex;
+    text-align: right;
+    align-items: right;
+    margin-left: 300px;
+    margin-top: -70px;
+  }
+  
+  .imglogos img {
+    width: 20px;
+    margin-top: 0px;
+    padding: 10px;
+  }
+  
+    #logo {
+      width:70px;
+      height: auto;
+      align-items: center;
+      justify-content: center;
+      margin-top: 25px;
+      margin-left: 160px;
+    }
+
+  #contato {
+    width: 300px;
+  }
+
+  #contatenos {
+    color: #AE7052;
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+
+#assis {
+    font-size: 15px;
+}
+
+textarea {
+    width: 300px;
+}
+
+label #btn,label #cancel{
+    position: absolute;
+    left: 20px;
+    margin-top: -40px;
+  }
+
+}
